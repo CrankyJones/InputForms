@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script href="js/jsquery-3.5.1.js"></script>
+  <script href="js/scripts.js"></script>
+  <title>Survey</title>
+</head>
+<body>
+  <div class="container">
+    <form id="formName">
+      <form class="form-group">
+        <label for="person">Your name:</label>
+        <input id="person" class="form-control" type="text">
+      </form>
+    </form>
+    <select class="form-control" id="favoriteFood">
+      <option>Sushi</option>
+      <option>Pizza</option>
+      <option>Burritos</option>
+      <option>Ramen</option>
+    </select>
+    <div class="radio">
+      <label>
+        <input type="radio" name="music" value="Rock" checked>
+        Rock
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="music" value="Alternative" checked>
+        Alternative
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="music" value="Punk" checked>
+        Punk
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="music" value="Metal" checked>
+        Metal
+      </label>
+    </div>
+    <div class="form-group">
+      <label for="born">Date of birth:</label>
+      <input id="born" class="form-control" type="date">
+    </div>
+    <p id=bio>
+      <span class="#person"></span> loves eating <span class="#favoriteFood"></span> while jamming out to <span class="#music"></span> on their birthday, which is <span class="#born"></span>.
+    </p>
+  </div>
+</body>
+</html>
